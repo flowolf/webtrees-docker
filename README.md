@@ -1,13 +1,20 @@
 # Docker Image for [webtrees](https://webtrees.github.io/)
 
-[![](https://img.shields.io/docker/cloud/build/nathanvaughn/webtrees.svg?style=popout)](https://hub.docker.com/r/nathanvaughn/webtrees)
-[![](https://images.microbadger.com/badges/image/nathanvaughn/webtrees.svg)](https://microbadger.com/images/nathanvaughn/webtrees)
-[![](https://images.microbadger.com/badges/version/nathanvaughn/webtrees.svg)](https://microbadger.com/images/nathanvaughn/webtrees)
-[![](https://images.microbadger.com/badges/license/nathanvaughn/webtrees.svg)](https://microbadger.com/images/nathanvaughn/webtrees)
+[![](https://img.shields.io/docker/cloud/build/flowolf/webtrees.svg?style=popout)](https://hub.docker.com/r/flowolf/webtrees)
+[![](https://images.microbadger.com/badges/image/flowolf/webtrees.svg)](https://microbadger.com/images/flowolf/webtrees)
+[![](https://images.microbadger.com/badges/version/flowolf/webtrees.svg)](https://microbadger.com/images/flowolf/webtrees)
+[![](https://images.microbadger.com/badges/license/flowolf/webtrees.svg)](https://microbadger.com/images/flowolf/webtrees)
 
 This is an up-to-date Docker image for
 [webtrees](https://github.com/fisharebest/webtrees) served over HTTP,
 designed to be put behind a reverse proxy such as Cloudflare.
+
+## Fork for Raspberry Pi
+
+this repo was forked from [nathanvaughn](https://github.com/NathanVaughn/webtrees-docker), to make it run on raspberry pi.
+
+The repo has not really changed much, just the build process is different ([build process](https://www.docker.com/blog/getting-started-with-docker-for-arm-on-linux/))
+
 
 ## Usage
 
@@ -76,24 +83,14 @@ If you use the **beta** version of webtrees, you will ***NOT*** be able to use t
 very different, and this is a one-way operation. Make a full backup before choosing
 to try the beta version of webtrees so that you can roll back if needed.
 
-### Specific Versions
-Each stable, beta, and alpha release version of webtrees
-produces a version-tagged build of the Docker container.
-
-Example:
-
-```yml
-image: nathanvaughn/webtrees:1.7.15
-```
-
 ### Latest
-Currently, the tags `latest` and `latest-beta` are available for the latest
-stable and beta versions of webtrees, respectively.
+Currently, the tag `latest` is available for the latest
+stable version of webtrees.
 
 Example:
 
 ```yml
-image: nathanvaughn/webtrees:latest-beta
+image: flowolf/webtrees:latest
 ```
 
 ## Issues

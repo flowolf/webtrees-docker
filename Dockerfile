@@ -33,12 +33,12 @@ ARG BUILD_DATE
 ARG VCS_REF
 LABEL org.label-schema.schema-version="1.0" \
       org.label-schema.build-date=$BUILD_DATE \
-      org.label-schema.name="nathanvaughn/webtrees" \
+      org.label-schema.name="flowolf/webtrees" \
       org.label-schema.description="Docker image for webtrees" \
       org.label-schema.license="MIT" \
-      org.label-schema.url="https://github.com/nathanvaughn/webtrees-docker" \
-      org.label-schema.vendor="nathanvaughn" \
+      org.label-schema.url="https://github.com/flowolf/webtrees-docker" \
+      org.label-schema.vendor="flowolf" \
       org.label-schema.version=$WEBTREES_VERSION \
       org.label-schema.vcs-ref=$VCS_REF \
-      org.label-schema.vcs-url="https://github.com/nathanvaughn/webtrees-docker.git" \
+      org.label-schema.vcs-url="https://github.com/flowolf/webtrees-docker.git" \
       org.label-schema.vcs-type="Git"

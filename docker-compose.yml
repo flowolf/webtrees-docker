@@ -4,7 +4,8 @@ services:
   app:
     depends_on:
       - db
-    image: nathanvaughn/webtrees:latest
+    # runs on raspberry pi as well
+    image: flowolf/webtrees:latest
     ports:
       - 1000:80
     restart: unless-stopped
@@ -19,7 +20,8 @@ services:
       MYSQL_USER: "webtrees"
       MYSQL_ROOT_PASSWORD: "badpassword"
       MYSQL_USER_PASSWORD: "badpassword"
-    image: mariadb:latest
+    # runs on raspberry pi as well
+    image: linuxserver/mariadb:latest
     restart: unless-stopped
     volumes:
       - db_data:/var/lib/mysql

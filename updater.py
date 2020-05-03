@@ -11,7 +11,7 @@ import github
 # if so, this is the string 'true'. Use json.loads() to convert it to a boolean
 ACTION = json.loads(os.getenv("GITHUB_ACTIONS", default="false").lower())
 WEBTREES_REPO = "fisharebest/webtrees"
-MY_REPO = os.getenv("GITHUB_REPOSITORY", default="nathanvaughn/webtrees-docker")
+MY_REPO = os.getenv("GITHUB_REPOSITORY", default="flowolf/webtrees-docker")
 
 
 def get_latest_versions(repo, number=5):
